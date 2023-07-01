@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "forward-project5"
-    region = "us-east-2"
+    bucket = "k8ss-bucket"
+    region = "us-east-1"
     key = "eks/terraform.tfstate"
   }
 }
