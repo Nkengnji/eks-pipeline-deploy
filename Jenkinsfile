@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     dir('Terraform') {
-                        sh "terraform init -upgrade"
+                        sh "terraform init -reconfigure"
                         sh "terraform destroy --auto-approve"
                     }
                 }
